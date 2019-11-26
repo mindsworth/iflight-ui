@@ -8,6 +8,8 @@
 	--main-bg-color: rgb(255, 255, 255);
 	--btn-text-color: rgba(54, 54, 55, 0.60);
 	--primary-font: 'Heebo';
+    --white: rgb(255, 255, 255);
+    --border-radius-size: 0.3em;
 }
 
 /**********************************
@@ -42,3 +44,29 @@ h1 {
 /**********************************
             Layout
 *********************************/
+.container {
+    padding: 0 2em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    padding: 1em 2em;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--brand-color);
+    border-radius: var(--border-radius-size);
+    letter-spacing: -0.07px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
