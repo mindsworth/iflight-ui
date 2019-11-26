@@ -1,0 +1,44 @@
+/**********************************
+            Variables
+*********************************/
+
+:root {
+	--brand-color: rgb(255, 15, 64);
+	--text-color: rgb(54, 54, 55);
+	--main-bg-color: rgb(255, 255, 255);
+	--btn-text-color: rgba(54, 54, 55, 0.60);
+	--primary-font: 'Heebo';
+}
+
+/**********************************
+            Base Style
+*********************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--primary-font, 'roboto', sans-serif);
+	font-size: 1.125rem;
+	color: var(--text-color);
+	background-color: var(--main-bg-color);
+}
+
+img {
+	max-width: 100%;
+}
+
+/**********************************
+            Typography
+*********************************/
+
+h1 {
+	font-size: 3rem;
+}
+
+/**********************************
+            Layout
+*********************************/
