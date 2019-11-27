@@ -33,6 +33,7 @@ body {
 	background-color: var(--main-bg-color);
 	min-height: 100%;
 	position: relative;
+	overflow-x: hidden;
 }
 
 a {
@@ -179,13 +180,13 @@ footer .left {
 }
 
 footer .link-item {
-    flex-grow: 1;
+	flex-grow: 1;
 }
 
 footer .link-item a {
 	display: flex;
 	align-items: center;
-    text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 footer img {
@@ -401,7 +402,6 @@ main .right .hero-img {
 		border-top: 1em solid var(--brand-color);
 		bottom: -1em;
 		right: 0;
-
 	}
 
 	#header-menu:checked + .header-drawer,
@@ -449,12 +449,12 @@ main .right .hero-img {
 	}
 
 	main .left .tag-wrap {
-        z-index: 2;
-        position: relative;
+		z-index: 2;
+		position: relative;
 	}
 
 	main .left .tag-wrap li {
-        margin-bottom: 0.5em;
+		margin-bottom: 0.5em;
 	}
 
 	main .right {
