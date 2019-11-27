@@ -14,10 +14,10 @@
             <div class="brand">iFlight</div>
             <nav>
                 <ul>
-                    <li><a class="link-item" href="#">How it works</a></li>
-                    <li><a class="link-item" href="#">Find a flight</a></li>
-                    <li><a class="link-item" href="#">Login</a></li>
-                    <li><a class="link-item sign-up" href="#">Sign Up</a></li>
+                    <li class="h-display"><a class="link-item" href="#">How it works</a></li>
+                    <li class="h-display"><a class="link-item" href="#">Find a flight</a></li>
+                    <li class="h-display"><a class="link-item" href="#">Login</a></li>
+                    <li class="h-display"><a class="link-item sign-up" href="#">Sign Up</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,13 +27,35 @@
                 <form onsubmit="">
                     <div class="form-group">
                         <label for="destination">
-                            <img class="airline" src="/imgs/icons/airline.svg" alt="Plane">
+                            <img class="airline" src="/imgs/icons/airline-dark.svg" alt="Plane">
                         </label>
                         <div class="form-control-wrap">
-                            <input class="form-control regular-text" type="text" name="destination" id="destination" placeholder="Enter A Destination">
+                            <input class="form-control regular-text" type="text" name="destination" id="destination" placeholder="Enter A Destination" aria-describedby="find flight">
                             <img class="compass" src="/imgs/icons/compass.svg" alt="compass">
                         </div>
                         <input class="btn submit-btn regular-text" type="submit" value="Find Flight">
+                    </div>
+
+                    <div class="tag-wrap">
+                        <ul>
+                            <li>
+                                <a class="small-text" href="#">Abuja to Lagos</a>
+                            </li>
+                            <li>
+                                <a class="small-text" href="#">Uyo</a>
+                            </li>
+                            <li>
+                                <a class="small-text" href="#">Owerri to Lagos</a>
+                            </li>
+                            <li>
+                                <a class="small-text" href="#">Abuja To PH</a>
+                            </li>
+                            <li>
+                                <a class="small-text more" href="#">
+                                    <img src="./imgs/icons/more.svg" alt="more" width="20px">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </form>
             </div>
@@ -44,7 +66,7 @@
         <footer class="container">
             <div class="left">
                 <div class="category link-item">
-                    <a class="regular-text" href="#">
+                    <a class="regular-text active-link" href="#">
                         <img src="./imgs/icons/category.svg" alt="all categories">
                         all categories
                     </a>
