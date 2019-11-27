@@ -22,18 +22,35 @@
             </nav>
         </header>
         <main>
-            <h1>Find Flights Heading To Any Destination</h1>
+            <div class="left container">
+                <h1 class="title">Find Flights Heading To Any Destination</h1>
+                <form onsubmit="">
+                    <div class="form-group">
+                        <label for="destination">
+                            <img class="airline" src="/imgs/icons/airline.svg" alt="Plane">
+                        </label>
+                        <div class="form-control-wrap">
+                            <input class="form-control regular-text" type="text" name="destination" id="destination" placeholder="Enter A Destination">
+                            <img class="compass" src="/imgs/icons/compass.svg" alt="compass">
+                        </div>
+                        <input class="btn submit-btn regular-text" type="submit" value="Find Flight">
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <img class="hero-img" src="./imgs/skyview.png" alt="hero skyview">
+            </div>
         </main>
         <footer class="container">
             <div class="left">
                 <div class="category link-item">
-                    <a class="small-text" href="#">
+                    <a class="regular-text" href="#">
                         <img src="./imgs/icons/category.svg" alt="all categories">
                         all categories
                     </a>
                 </div>
                 <div class="search link-item">
-                    <a class="small-text" href="#">
+                    <a class="regular-text" href="#">
                         <img src="./imgs/icons/search.svg" alt="find flights">
                         find flights
                     </a>
@@ -41,25 +58,25 @@
             </div>
             <div class="right">
                 <div class="link-item">
-                    <a class="small-text" href="#">
+                    <a class="regular-text" href="#">
                         <img src="./imgs/icons/destination.svg" alt="travel destinations">
                         travel destinations
                     </a>
                 </div>
                 <div class="link-item">
-                    <a class="small-text" href="#">
+                    <a class="regular-text" href="#">
                         <img src="./imgs/icons/location.svg" alt="airport locations">
                         airport locations
                     </a>
                 </div>
                 <div class="link-item">
-                    <a class="small-text" href="#">
+                    <a class="regular-text" href="#">
                         <img src="./imgs/icons/ticket.svg" alt="buy tickets">
                         buy tickets
                     </a>
                 </div>
                 <div class="link-item">
-                    <a class="small-text" href="#">
+                    <a class="regular-text" href="#">
                         <img src="./imgs/icons/airline.svg" alt="airlines">
                         airlines
                     </a>

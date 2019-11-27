@@ -11,7 +11,8 @@
 	--regular-text-color: rgba(54, 54, 55, 0.80);
 	--primary-font: 'Heebo';
 	--white: rgb(255, 255, 255);
-	--border-radius-size: 0.3em;
+    --border-radius-size: 0.3em;
+    --box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /**********************************
@@ -37,13 +38,32 @@ img {
 	max-width: 100%;
 }
 
+.btn {
+	background-color: var(--brand-color);
+	border: 0;
+	color: var(--white);
+	padding: 1.5em 2em;
+	font-weight: 600;
+}
+
+.form-control {
+	width: 100%;
+	padding: 1.5em 1em;
+	border: 0;
+}
+
+.form-control:focus {
+    outline: 0;
+}
+
 /**********************************
             Typography
 *********************************/
 
 h1 {
 	font-size: 3rem;
-	font-weight: 500;
+    font-weight: 500;
+    line-height: 1.3em;
 	text-transform: capitalize;
 }
 
@@ -53,6 +73,10 @@ a {
 
 .small-text {
 	font-size: 0.9rem;
+}
+
+.regular-text {
+	font-size: 1rem;
 }
 
 /**********************************
@@ -82,7 +106,7 @@ header {
 	border-radius: var(--border-radius-size);
 	letter-spacing: -0.07px;
 	margin-right: 5em;
-	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--box-shadow);
 }
 
 nav ul {
@@ -95,7 +119,7 @@ nav li {
 }
 
 nav .link-item {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	color: var(--regular-text-color);
 }
 
@@ -111,10 +135,10 @@ footer {
 	bottom: 0;
 	left: 0;
 	display: grid;
-    grid-template-columns: 1.2fr 3fr;
-    height: 5em;
-    align-items: center;
-    background-color: var(--light-bg-color);
+	grid-template-columns: 1.2fr 3fr;
+	height: 5em;
+	align-items: center;
+	background-color: var(--light-bg-color);
 }
 
 footer .left {
@@ -133,8 +157,8 @@ footer .link-item a {
 }
 
 footer img {
-    height: 2.5em;
-    margin-right: 1em;
+	height: 2.3em;
+	margin-right: 1em;
 }
 
 footer .category {
@@ -143,4 +167,67 @@ footer .category {
 
 footer .right {
 	display: flex;
+}
+
+/* Main */
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	height: 100%;
+}
+
+main .left {
+    padding-right: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .left .title{
+    padding-bottom: 0.6em;
+}
+
+main .left .form-group {
+	display: flex;
+	width: 30em;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-size);
+    overflow: hidden;
+}
+
+main .left .airline {
+    display: flex;
+    padding: 1em 1em;
+}
+
+main .left .form-control {
+	padding: 0;
+}
+
+main .left .form-control-wrap {
+	flex-grow: 1;
+	position: relative;
+}
+
+main .left .compass {
+	position: absolute;
+	top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+}
+
+main .right {
+	height: 100vh;
+}
+
+main .right .hero-img {
+	float: right;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	object-position: left;
+	object-fit: cover;
+	border: 0;
 }
